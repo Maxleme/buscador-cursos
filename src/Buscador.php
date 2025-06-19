@@ -1,26 +1,24 @@
-<?php 
+<?php
 
 namespace Maxleme\BuscadorDeCursos;
 
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
-
-
-class Buscador {
-
+class Buscador
+{
     private $crawler;
-
     private $httpClient;
 
-    public function __construct(ClientInterface $httpClient, Crawler $crawler) {
+    public function __construct(ClientInterface $httpClient, Crawler $crawler)
+    {
         $this->httpClient = $httpClient;
         $this->crawler = $crawler;
     }
 
-    public function buscar(string $url): array {
+    public function buscar(string $url): array
+    {
         $resposta = $this->httpClient->request('GET', $url);
-        
         $html = $resposta->getBody()->getContents();
         $this->crawler->addHtmlContent($html);
 
