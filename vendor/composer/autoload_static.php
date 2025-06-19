@@ -35,7 +35,7 @@ class ComposerStaticInitf1e8ffb708732636b2a847e8479f9c09
         ),
         'M' => 
         array (
-            'Maxleme\\BuscadorCursos\\' => 23,
+            'Maxleme\\BuscadorDeCursos\\' => 25,
         ),
         'G' => 
         array (
@@ -78,7 +78,7 @@ class ComposerStaticInitf1e8ffb708732636b2a847e8479f9c09
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Maxleme\\BuscadorCursos\\' => 
+        'Maxleme\\BuscadorDeCursos\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
