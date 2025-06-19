@@ -1,0 +1,2579 @@
+<!DOCTYPE html><html
+lang="pt-BR"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0"><title>Cursos de PHP | Alura Cursos Online</title><meta
+name="description" content="Você vai desenvolver com uma das linguagens mais populares no mercado que evoluiu muito em todos os requisitos nos últimos anos. Use corretamente a orientação a objetos com o PHP. Aprenda a lidar com as coleções. Aproveite o Composer e muito mais!"><link
+rel="canonical" href="https://www.alura.com.br/cursos-online-programacao/php"><link
+rel="icon" href="/assets/favicon.1750260030.ico" /><link
+rel="preconnect" href="https://fonts.googleapis.com"><link
+rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Chakra+Petch:wght@400;600;700&family=Michroma&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link
+href="https://fonts.googleapis.com/css?family=Inter:wght@400;600;700&family=Chakra+Petch:wght@400;600;700&family=Michroma&display=swap" rel="stylesheet" type="text/css" />
+</noscript><link
+rel="stylesheet" href="/bundle,base/_reset,base/base,base/buttons,base/colors-apostilas,base/colors,base/titulos.1750260030.css"><link
+rel="stylesheet" href="/bundle,categoria/categoria,categoria/categoriaBF,categoria/categoriaCyber,categoria/lideresCategoria,categoria/listaSubcategorias.1750260030.css"><meta
+property="og:locale" content="pt_BR"><meta
+property="og:description" content="Você vai desenvolver com uma das linguagens mais populares no mercado que evoluiu muito em todos os requisitos nos últimos anos. Use corretamente a orientação a objetos com o PHP. Aprenda a lidar com as coleções. Aproveite o Composer e muito mais!"><meta
+property="og:title" content="Cursos de PHP | Alura Cursos Online"><meta
+property="og:site_name" content="Alura"><meta
+property="og:url" content="https://www.alura.com.br/cursos-online-programacao/php"><meta
+property="og:image" content="https://www.alura.com.br/assets/api/share/categoria-programacao.png"><meta
+property="og:image:alt" content="Alura logo"><meta
+property="fb:app_id" content="140078819399376"><meta
+property="og:type" content="website"><meta
+name="twitter:card" content="summary_large_image"><meta
+name="theme-color" content="#031626"><meta
+name="google-site-verification" content="e-ieHUO1JHyNyCZv0Z8Nu-R3ECPykHiNHHEhPdF35Bk" /> <script>(function(w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src = 'https://stape.alura.com.br/qukryqvi.js?st=' + i + dl + '';
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayerAlura', 'NTLWWLR');</script> </head><body
+class="pagina-categoria"> <script async src="/assets/js/avatarOnError.1750260032.js"></script> <noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=NTLWWLR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <script type="application/ld+json">{
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://www.alura.com.br",
+          "name": "Alura"
+        }
+      }   
+              ,{
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.alura.com.br/cursos-online-programacao",
+            "name": "Programação"
+          }
+        }
+              ,{
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.alura.com.br/cursos-online-programacao/php",
+            "name": "PHP"
+          }
+        }
+            ]
+    }</script>  <script>window.dataLayer.push({
+                event: 'view_item',
+                value: 3540.00,
+                items: [{
+                    id: 'cursos-online-programacao',
+                    google_business_vertical: 'education'
+                }]
+            });</script> <script>dataLayerAlura.push({ ecommerce: null });
+            dataLayerAlura.push({
+                event: 'view_item',
+                ecommerce: {
+                    currency: 'BRL',
+                    items: [
+                        {
+                            item_name: 'Cursos online Programação',
+                            quantity: 1
+                        }
+                    ]
+                }
+            });</script> <link
+rel="stylesheet" href="/assets/css/block/header.1750260030.css"><header
+class="header internalPage "><div
+class="header__principal"><nav
+class="container header__nav"><div
+class="header__nav--menu-cta" tabindex="2" data-tabindex-mobile="2" data-tabindex-desktop="0">
+<img
+class="--to-open" src="/assets/img/header/icon-menu-open.1750260031.svg" alt="Botão para abrir o Menu">
+<img
+class="--to-close" src="/assets/img/header/icon-menu-close.1750260031.svg" alt="Botão para fechar o Menu"></div><a
+href="/" class="header__nav--logo tabindex" tabindex="0" data-tabindex-mobile="0" data-tabindex-desktop="3">
+<img
+alt="Logo da empresa Alura" src="/assets/img/home/alura-logo.1750260031.svg" width="75" height="35">
+</a><div
+class="header__nav--busca header-barraBusca"><form
+action="/busca" class="header__nav--busca-form">
+<input
+type="search" class="header__nav--busca-input" id="header-barraBusca-form-campoBusca" name="query" placeholder="O que aprender?" tabindex="4" data-tabindex-mobile="4" data-tabindex-desktop="4" autocomplete="off" required>
+<button
+class="header__nav--busca-submit" type="submit" tabindex="5" data-tabindex-mobile="5" data-tabindex-desktop="5" aria-label="Buscar">
+<svg
+xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" tabindex="-1">
+<g
+fill="none" fill-rule="evenodd" stroke="#D7F9FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" transform="translate(1 1)" tabindex="-1">
+<path
+d="M13.637 12.86l-3.526-3.527" tabindex="-1" />
+<circle
+cx="5.667" cy="5.667" r="5.667" tabindex="-1" />
+</g>
+</svg>
+</button></form></div><div
+class="header__nav--ctas">
+<a
+class="header__nav--ctas-entrar header__nav--link-hover" href="https://cursos.alura.com.br/loginForm" tabindex="3" data-tabindex-mobile="3" data-tabindex-desktop="1">Entrar</a>
+<a
+class="header__nav--ctas-matricule --cta-to-plans" href="/planos-cursos-online" tabindex="1" data-tabindex-mobile="1" data-tabindex-desktop="2">Ver planos</a></div><div
+class="header__nav--menu">
+<a
+href="/empresas" class="header__nav--menu-link header__nav--link-hover" tabindex="6" data-tabindex-mobile="6" data-tabindex-desktop="6">
+<span>Para</span>
+<span>Empresas</span>
+</a>
+<a
+href="https://carreira.alura.com.br/cursos-imersivos/home" class="header__nav--menu-link header__nav--link-hover" tabindex="7" data-tabindex-mobile="7" data-tabindex-desktop="7">
+<span>Cursos</span>
+<span>Imersivos</span>
+</a>
+<a
+href="/pos-tech" class="header__nav--menu-link header__nav--link-hover" tabindex="8" data-tabindex-mobile="8" data-tabindex-desktop="8">
+<span>Pós</span>
+<span>Graduação</span>
+</a>
+<a
+href="https://carreira.alura.com.br/certificacoes/home" class="header__nav--menu-link header__nav--link-hover" tabindex="9" data-tabindex-mobile="9" data-tabindex-desktop="9">
+<span>Certificações</span>
+</a></div></nav></div><div
+class="header__nav--courses"><div
+class="container"><ul
+class="header__nav--courses-list"><li
+class="header__nav--courses-item --programacao">
+<a
+href="/cursos-online-programacao" class="header__nav--courses-item-link">
+Programação                                    <span
+style="color: #00c86f;">_</span>
+</a></li><li
+class="header__nav--courses-item --front-end">
+<a
+href="/cursos-online-front-end" class="header__nav--courses-item-link">
+Front-end                                    <span
+style="color: #6bd1ff;">_</span>
+</a></li><li
+class="header__nav--courses-item --data-science">
+<a
+href="/cursos-online-data-science" class="header__nav--courses-item-link">
+Data Science                                    <span
+style="color: #9cd33b;">_</span>
+</a></li><li
+class="header__nav--courses-item --inteligencia-artificial">
+<a
+href="/cursos-online-inteligencia-artificial" class="header__nav--courses-item-link">
+Inteligência Artificial                                    <span
+style="color: #7b71ff;">_</span>
+</a></li><li
+class="header__nav--courses-item --devops">
+<a
+href="/cursos-online-devops" class="header__nav--courses-item-link">
+DevOps                                    <span
+style="color: #f16165;">_</span>
+</a></li><li
+class="header__nav--courses-item --design-ux">
+<a
+href="/cursos-online-design-ux" class="header__nav--courses-item-link">
+UX & Design                                    <span
+style="color: #dc6ebe;">_</span>
+</a></li><li
+class="header__nav--courses-item --mobile">
+<a
+href="/cursos-online-mobile" class="header__nav--courses-item-link">
+Mobile                                    <span
+style="color: #ffba05;">_</span>
+</a></li><li
+class="header__nav--courses-item --inovacao-gestao">
+<a
+href="/cursos-online-inovacao-gestao" class="header__nav--courses-item-link">
+Inovação & Gestão                                    <span
+style="color: #ff8c2a;">_</span>
+</a></li></ul></div></div></header><main
+data-criteo-id='[{"id": "cursos-online-programacao"}]' class="pagina-categoria"><link
+rel="stylesheet" href="/assets/css/block/parceiroBanner.1750260030.css"><section
+class="pagina-categoria__banner"><div
+class="container-image-categoria"><div
+class="container"><div
+class="pagina-categoria__headline"><div
+class="page-categoria__headline_content pagina-categoria__headline_item"><h1 class="pagina-categoria__titulo" style=" color: #00c86f;">
+<span
+class="pagina-categoria__label">Cursos da Escola</span>
+<strong
+class="pagina-categoria__nome">
+<span
+class="pagina-categoria__subcategoria">
+PHP,                 </span>
+<span
+class="pagina-categoria__categoria">
+Programação                  <svg
+class="pagina-categoria__svg" style="fill: #00c86f;"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+<use
+xlink:href="/svg,1750260030/categorias#icon-categorias-programacao" />
+</svg>
+</span>
+</strong></h1><p
+class="pagina-categoria__descricao">
+Você vai desenvolver com uma das linguagens mais populares no mercado que evoluiu muito em todos os requisitos nos últimos anos. Use corretamente a orientação a objetos com o PHP. Aprenda a lidar com as coleções. Aproveite o Composer e muito mais!                            Saiba como <a
+href="#como-comecar">começar com PHP</a>.
+Conheça mais da <a
+href="/escola-programacao">Escola de Programação</a> ou navegue nessa página para ver todos nossos cursos e formações.</p></div><div
+class="pagina-categoria__ilustracao_container pagina-categoria__headline_item">
+<svg
+class="pagina-categoria__ilustracao" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use
+xlink:href="/svg,1750260031/ilustracoes-categorias#icon-ilustracoes-categorias-programacao" />
+</svg></div></div></div></div></section><div
+class="diagonal-wrapper"><div
+class="normalize-diagonal-wrapper"><style>.subcategoria__lista {
+        max-height: 640px;
+    }
+
+    @media(min-width: 731px) {
+        .subcategoria__lista {
+            max-height: none;
+        }
+    }</style><section
+class="lista-subcategorias pagina-categoria__lista-subcategorias" data-category="programacao"><div
+class="filtro-subcategorias lista-subcategorias__filtro-subcategorias"><div
+class="container --color"><ul
+class="filtro-subcategorias__lista"><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Todos os cursos</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/logica"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Lógica</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/python"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Python</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/node-js"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Node.JS</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/php"
+class="filtro-subcategorias__link filtro-subcategorias__link--selecionado">
+<span
+class="filtro-subcategorias__nome">PHP</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/javascript"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Javascript</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/java"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Java</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/dotnet"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">.NET</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/jogos"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Jogos</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/computacao"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Computação</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/automacao-produtividade"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Automação e Produtividade</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/quality-assurance"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Testes e Quality Assurance</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/elixir"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Elixir</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/clojure"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">Clojure</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/golang"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">GoLang</span>
+</a></li><li
+class="filtro-subcategorias__item">
+<a
+href="/cursos-online-programacao/linguagem-c"
+class="filtro-subcategorias__link ">
+<span
+class="filtro-subcategorias__nome">C e C++</span>
+</a></li></ul></div></div><div
+class="container --color"><div
+class="lista-subcategorias__subcategorias subcategoria__container"><div
+id="php" class="subcategoria lista-subcategorias__subcategoria"><h2 class="subcategoria__titulo">PHP</h2><ul
+class="subcategoria__lista" id="ls-9"><li
+class="subcategoria__item"><link
+rel="stylesheet" href="/assets/css/block/cardCurso.1750260030.css"><a
+href="/curso-online-php-primeiros-passos"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-primeiros-passos.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: conceitos, lidando com dados, loops e mais</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+06h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-arrays-strings-funcoes"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-arrays-strings-funcoes.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Avançando com PHP: Arrays, Strings, Função e Web</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-strings-manipulando-textos-php"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-strings-manipulando-textos-php.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP Strings: manipulando textos com PHP</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-manipulando-colecoes-arrays"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-manipulando-colecoes-arrays.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: manipulando coleções com Arrays</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-dominando-collections"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-dominando-collections.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: dominando as Collections</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-oo-heranca-polimorfirmo-interfaces"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-oo-heranca-polimorfirmo-interfaces.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-composer"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-composer.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP Composer: Dependências, Autoload e Publicação</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+06h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-programacao-funcional"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-programacao-funcional.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: Programação Funcional</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-exceptions-tratamento-erros"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-exceptions-tratamento-erros.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP Exceptions: tratamento de erros</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-io-arquivos-streams"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-io-arquivos-streams.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP I/O: trabalhando com arquivos e streams</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-introducao-bdd"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-introducao-bdd.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP e Behavior Driven Development: BDD com Behat</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-parallel-programacao-paralela"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-parallel-programacao-paralela.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP Parallel: Processos, Threads e Channels</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-introducao-clean-achitecture"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-introducao-clean-achitecture.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP e Clean Architecture: descomplicando arquitetura de software</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-domain-driven-design-php"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/domain-driven-design-php.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP e Domain Driven Design: apresentando os conceitos</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-reativo-programacao-assincrona-tempo-real"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-reativo-programacao-assincrona-tempo-real.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP Reativo: programação assíncrona em tempo real</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-pdo-banco-de-dados"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-pdo-banco-de-dados.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP e PDO: trabalhando com bancos de dados</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-web-lidando-seguranca-api"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-web-lidando-seguranca-api.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP na Web: lidando com segurança e API</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-web-aplicando-boas-praticas-psrs"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-web-aplicando-boas-praticas-psrs.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP na Web: aplicando boas práticas e PSRs</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-web-conhecendo-padrao-mvc"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-web-conhecendo-padrao-mvc.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP na Web: conhecendo o padrão MVC</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-mysql-criando-primeira-aplicacao-web"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-mysql-criando-primeira-aplicacao-web.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP e MySQL: criando sua primeira aplicação web</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-criando-aplicacao"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-criando-aplicacao.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: criando sua aplicação</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-evolua-conhecimento-organize-codigo"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-evolua-conhecimento-organize-codigo.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: evolua seu conhecimento e organize seu código</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-programacao-orientada-objetos"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-programacao-orientada-objetos.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: conheça a programação Orientada a Objetos</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-interfaces-namespaces-traits-excecoes"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-interfaces-namespaces-traits-excecoes.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: use Interfaces, Namespaces, Traits e Exceções</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-object-calisthenics-exercitando-orientacao-objetos"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/object-calisthenics-exercitando-orientacao-objetos.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Object Calisthenics: exercitando a Orientação a Objetos</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+06h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-swoole-php-servidor-assincrono-corrotinas-php"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/swoole-php-servidor-assincrono-corrotinas-php.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Swoole PHP: servidor assíncrono e corrotinas com PHP</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-refatoracao-php-boas-praticas-codigo"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/refatoracao-php-boas-praticas-codigo.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Refatoração em PHP: boas práticas no seu código</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-laravel-criando-aplicacao-mvc"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/laravel-criando-aplicacao-mvc.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Laravel: criando uma aplicação com MVC</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-laravel-formularios-sessoes-relacionamentos"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/laravel-formularios-sessoes-relacionamentos.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Laravel: validando formulários, usando sessões e definindo relacionamentos</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-laravel-transacoes-service-container-autenticacao"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/laravel-transacoes-service-container-autenticacao.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Laravel: transações, service container e autenticação</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-laravel-e-mails-eventos-uploads-testes"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/laravel-e-mails-eventos-uploads-testes.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Laravel: e-mails, eventos assíncronos, uploads e testes</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-laravel-construindo-apis"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/laravel-construindo-apis.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Laravel: construindo APIs</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-xdebug-ferramenta-debug-profiling"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/xdebug-ferramenta-debug-profiling.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso XDebug: ferramenta de debug e profiling</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-phpunit-tdd"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/phpunit-tdd.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP e TDD: testes com PHPUnit</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+06h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-solid-php-principios-orientacao-a-objetos"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/solid-php-principios-orientacao-a-objetos.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso SOLID com PHP: princípios da programação orientada a objetos</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+06h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-mocks"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-mocks.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Mocks em PHP: entenda os dublês de testes</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-testes-integracao"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-testes-integracao.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Testes de integração com PHP: testando o acesso à API e ao banco de dados</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-design-pattern-comportamental"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-design-pattern-comportamental.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Design Patterns em PHP: padrões comportamentais</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-design-pattern-estrutural"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-design-pattern-estrutural.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Design Patterns em PHP: padrões estruturais</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-design-pattern-criacional"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-design-pattern-criacional.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Design Patterns em PHP: padrões criacionais</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-doctrine-conhecendo-orm-php"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/doctrine-conhecendo-orm-php.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Doctrine: conhecendo um ORM PHP</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-doctrine-migrations-relatorios-performance"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/doctrine-migrations-relatorios-performance.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Doctrine: Migrations, relatórios e performance</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-symfony-framework-cache-seguranca"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/symfony-framework-cache-seguranca.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Symfony Framework: cache e segurança</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-symfony-framework-criando-aplicacao-mvc"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/symfony-framework-criando-aplicacao-mvc.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Symfony Framework: criando uma aplicação com MVC</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-symfony-framework-formularios-validacao-sessao"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/symfony-framework-formularios-validacao-sessao.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Symfony Framework: formulários, validação e sessão</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-symfony-framework-eventos-traducao-logs-deploy"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/symfony-framework-eventos-traducao-logs-deploy.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Symfony Framework: lidando com eventos, tradução, logs e deploy</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+10h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-persistencia-poliglota-php-diferentes-tipos-bancos-dados"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/persistencia-poliglota-php-diferentes-tipos-bancos-dados.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Persistência poliglota com PHP: conectando-se a diferentes tipos de bancos de dados</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-persistencia-poliglota-php-buscas-mensageria-bancos-dados-grafos-colunares"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/persistencia-poliglota-php-buscas-mensageria-bancos-dados-grafos-colunares.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Persistência poliglota com PHP: implementando buscas, mensageria, bancos de dados de grafos e colunares</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-arquitetura-php-escalando-aplicacao-monolitica"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/arquitetura-php-escalando-aplicacao-monolitica.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Arquitetura com PHP: escalando uma aplicação monolítica</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-arquitetura-escalabilidade-php-disponibilidade-aplicacao"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/arquitetura-escalabilidade-php-disponibilidade-aplicacao.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Arquitetura e Escalabilidade com PHP: garantindo a disponibilidade de uma aplicação</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-php-aplicando-boas-praticas-codigo"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/php-aplicando-boas-praticas-codigo.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso PHP: aplicando boas práticas de código</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+08h                     </span>
+</a></li><li
+class="subcategoria__item">
+<a
+href="/curso-online-arquitetura-php-fazendo-deploy-aplicacao"
+class="card-curso  "><div
+class="card-curso-wrapper">
+<img
+class="card-curso__icone" src="https://www.alura.com.br/assets/api/cursos/arquitetura-php-fazendo-deploy-aplicacao.svg" aria-hidden="true" alt=""><div
+class="card-curso__info">
+<span
+class="card-curso__nome">Curso Arquitetura com PHP: fazendo o deploy de um aplicação</span></div></div>
+<span
+class="card-curso__carga">
+<span
+class="card-curso__label"></span>
+06h                     </span>
+</a></li></ul><button
+class="subcategoria__ver-mais subcategoria__numero" aria-expanded="false" aria-controls="ls-9">
+Ver mais cursos de
+PHP                        </button></div></div></div></section> <script>window.dataLayer.push({
+                event: 'view_item_list',
+                value: 3540.00,
+                items: [{"id":"cursos-online-php-primeiros-passos","google_business_vertical":"education"},{"id":"cursos-online-php-arrays-strings-funcoes","google_business_vertical":"education"},{"id":"cursos-online-php-strings-manipulando-textos-php","google_business_vertical":"education"},{"id":"cursos-online-php-manipulando-colecoes-arrays","google_business_vertical":"education"},{"id":"cursos-online-php-dominando-collections","google_business_vertical":"education"},{"id":"cursos-online-php-oo-heranca-polimorfirmo-interfaces","google_business_vertical":"education"},{"id":"cursos-online-php-composer","google_business_vertical":"education"},{"id":"cursos-online-php-programacao-funcional","google_business_vertical":"education"},{"id":"cursos-online-php-exceptions-tratamento-erros","google_business_vertical":"education"},{"id":"cursos-online-php-io-arquivos-streams","google_business_vertical":"education"},{"id":"cursos-online-php-introducao-bdd","google_business_vertical":"education"},{"id":"cursos-online-php-parallel-programacao-paralela","google_business_vertical":"education"},{"id":"cursos-online-php-introducao-clean-achitecture","google_business_vertical":"education"},{"id":"cursos-online-domain-driven-design-php","google_business_vertical":"education"},{"id":"cursos-online-php-reativo-programacao-assincrona-tempo-real","google_business_vertical":"education"},{"id":"cursos-online-php-pdo-banco-de-dados","google_business_vertical":"education"},{"id":"cursos-online-php-web-lidando-seguranca-api","google_business_vertical":"education"},{"id":"cursos-online-php-web-aplicando-boas-praticas-psrs","google_business_vertical":"education"},{"id":"cursos-online-php-web-conhecendo-padrao-mvc","google_business_vertical":"education"},{"id":"cursos-online-php-mysql-criando-primeira-aplicacao-web","google_business_vertical":"education"},{"id":"cursos-online-php-criando-aplicacao","google_business_vertical":"education"},{"id":"cursos-online-php-evolua-conhecimento-organize-codigo","google_business_vertical":"education"},{"id":"cursos-online-php-programacao-orientada-objetos","google_business_vertical":"education"},{"id":"cursos-online-php-interfaces-namespaces-traits-excecoes","google_business_vertical":"education"},{"id":"cursos-online-object-calisthenics-exercitando-orientacao-objetos","google_business_vertical":"education"},{"id":"cursos-online-swoole-php-servidor-assincrono-corrotinas-php","google_business_vertical":"education"},{"id":"cursos-online-refatoracao-php-boas-praticas-codigo","google_business_vertical":"education"},{"id":"cursos-online-laravel-criando-aplicacao-mvc","google_business_vertical":"education"},{"id":"cursos-online-laravel-formularios-sessoes-relacionamentos","google_business_vertical":"education"},{"id":"cursos-online-laravel-transacoes-service-container-autenticacao","google_business_vertical":"education"},{"id":"cursos-online-laravel-e-mails-eventos-uploads-testes","google_business_vertical":"education"},{"id":"cursos-online-laravel-construindo-apis","google_business_vertical":"education"},{"id":"cursos-online-xdebug-ferramenta-debug-profiling","google_business_vertical":"education"},{"id":"cursos-online-phpunit-tdd","google_business_vertical":"education"},{"id":"cursos-online-solid-php-principios-orientacao-a-objetos","google_business_vertical":"education"},{"id":"cursos-online-php-mocks","google_business_vertical":"education"},{"id":"cursos-online-php-testes-integracao","google_business_vertical":"education"},{"id":"cursos-online-php-design-pattern-comportamental","google_business_vertical":"education"},{"id":"cursos-online-php-design-pattern-estrutural","google_business_vertical":"education"},{"id":"cursos-online-php-design-pattern-criacional","google_business_vertical":"education"},{"id":"cursos-online-doctrine-conhecendo-orm-php","google_business_vertical":"education"},{"id":"cursos-online-doctrine-migrations-relatorios-performance","google_business_vertical":"education"},{"id":"cursos-online-symfony-framework-cache-seguranca","google_business_vertical":"education"},{"id":"cursos-online-symfony-framework-criando-aplicacao-mvc","google_business_vertical":"education"},{"id":"cursos-online-symfony-framework-formularios-validacao-sessao","google_business_vertical":"education"},{"id":"cursos-online-symfony-framework-eventos-traducao-logs-deploy","google_business_vertical":"education"},{"id":"cursos-online-persistencia-poliglota-php-diferentes-tipos-bancos-dados","google_business_vertical":"education"},{"id":"cursos-online-persistencia-poliglota-php-buscas-mensageria-bancos-dados-grafos-colunares","google_business_vertical":"education"},{"id":"cursos-online-arquitetura-php-escalando-aplicacao-monolitica","google_business_vertical":"education"},{"id":"cursos-online-arquitetura-escalabilidade-php-disponibilidade-aplicacao","google_business_vertical":"education"},{"id":"cursos-online-php-aplicando-boas-praticas-codigo","google_business_vertical":"education"},{"id":"cursos-online-arquitetura-php-fazendo-deploy-aplicacao","google_business_vertical":"education"}]});</script> <script>dataLayerAlura.push({ ecommerce: null });
+            dataLayerAlura.push({
+                event: 'view_item_list',
+                ecommerce: {
+                    currency: 'BRL',
+                    items: [{"item_name":"Cursos online PHP: conceitos, lidando com dados, loops e mais","quantity":1},{"item_name":"Cursos online Avan\u00e7ando com PHP: Arrays, Strings, Fun\u00e7\u00e3o e Web","quantity":1},{"item_name":"Cursos online PHP Strings: manipulando textos com PHP","quantity":1},{"item_name":"Cursos online PHP: manipulando cole\u00e7\u00f5es com Arrays","quantity":1},{"item_name":"Cursos online PHP: dominando as Collections","quantity":1},{"item_name":"Cursos online Avan\u00e7ando com Orienta\u00e7\u00e3o a Objetos com PHP: Heran\u00e7a, Polimorfismo e Interfaces","quantity":1},{"item_name":"Cursos online PHP Composer: Depend\u00eancias, Autoload e Publica\u00e7\u00e3o","quantity":1},{"item_name":"Cursos online PHP: Programa\u00e7\u00e3o Funcional","quantity":1},{"item_name":"Cursos online PHP Exceptions: tratamento de erros","quantity":1},{"item_name":"Cursos online PHP I\/O: trabalhando com arquivos e streams","quantity":1},{"item_name":"Cursos online PHP e Behavior Driven Development: BDD com Behat","quantity":1},{"item_name":"Cursos online PHP Parallel: Processos, Threads e Channels","quantity":1},{"item_name":"Cursos online PHP e Clean Architecture: descomplicando arquitetura de software","quantity":1},{"item_name":"Cursos online PHP e Domain Driven Design: apresentando os conceitos","quantity":1},{"item_name":"Cursos online PHP Reativo: programa\u00e7\u00e3o ass\u00edncrona em tempo real","quantity":1},{"item_name":"Cursos online PHP e PDO: trabalhando com bancos de dados","quantity":1},{"item_name":"Cursos online PHP na Web: lidando com seguran\u00e7a e API","quantity":1},{"item_name":"Cursos online PHP na Web: aplicando boas pr\u00e1ticas e PSRs","quantity":1},{"item_name":"Cursos online PHP na Web: conhecendo o padr\u00e3o MVC","quantity":1},{"item_name":"Cursos online PHP e MySQL: criando sua primeira aplica\u00e7\u00e3o web","quantity":1},{"item_name":"Cursos online PHP: criando sua aplica\u00e7\u00e3o","quantity":1},{"item_name":"Cursos online PHP: evolua seu conhecimento e organize seu c\u00f3digo","quantity":1},{"item_name":"Cursos online PHP: conhe\u00e7a a programa\u00e7\u00e3o Orientada a Objetos","quantity":1},{"item_name":"Cursos online PHP: use Interfaces, Namespaces, Traits e Exce\u00e7\u00f5es","quantity":1},{"item_name":"Cursos online Object Calisthenics: exercitando a Orienta\u00e7\u00e3o a Objetos","quantity":1},{"item_name":"Cursos online Swoole PHP: servidor ass\u00edncrono e corrotinas com PHP","quantity":1},{"item_name":"Cursos online Refatora\u00e7\u00e3o em PHP: boas pr\u00e1ticas no seu c\u00f3digo","quantity":1},{"item_name":"Cursos online Laravel: criando uma aplica\u00e7\u00e3o com MVC","quantity":1},{"item_name":"Cursos online Laravel: validando formul\u00e1rios, usando sess\u00f5es e definindo relacionamentos","quantity":1},{"item_name":"Cursos online Laravel: transa\u00e7\u00f5es, service container e autentica\u00e7\u00e3o","quantity":1},{"item_name":"Cursos online Laravel: e-mails, eventos ass\u00edncronos, uploads e testes","quantity":1},{"item_name":"Cursos online Laravel: construindo APIs","quantity":1},{"item_name":"Cursos online XDebug: ferramenta de debug e profiling","quantity":1},{"item_name":"Cursos online PHP e TDD: testes com PHPUnit","quantity":1},{"item_name":"Cursos online SOLID com PHP: princ\u00edpios da programa\u00e7\u00e3o orientada a objetos","quantity":1},{"item_name":"Cursos online Mocks em PHP: entenda os dubl\u00eas de testes","quantity":1},{"item_name":"Cursos online Testes de integra\u00e7\u00e3o com PHP: testando o acesso \u00e0 API e ao banco de dados","quantity":1},{"item_name":"Cursos online Design Patterns em PHP: padr\u00f5es comportamentais","quantity":1},{"item_name":"Cursos online Design Patterns em PHP: padr\u00f5es estruturais","quantity":1},{"item_name":"Cursos online Design Patterns em PHP: padr\u00f5es criacionais","quantity":1},{"item_name":"Cursos online Doctrine: conhecendo um ORM PHP","quantity":1},{"item_name":"Cursos online Doctrine: Migrations, relat\u00f3rios e performance","quantity":1},{"item_name":"Cursos online Symfony Framework: cache e seguran\u00e7a","quantity":1},{"item_name":"Cursos online Symfony Framework: criando uma aplica\u00e7\u00e3o com MVC","quantity":1},{"item_name":"Cursos online Symfony Framework: formul\u00e1rios, valida\u00e7\u00e3o e sess\u00e3o","quantity":1},{"item_name":"Cursos online Symfony Framework: lidando com eventos, tradu\u00e7\u00e3o, logs e deploy","quantity":1},{"item_name":"Cursos online Persist\u00eancia poliglota com PHP: conectando-se a diferentes tipos de bancos de dados","quantity":1},{"item_name":"Cursos online Persist\u00eancia poliglota com PHP: implementando buscas, mensageria, bancos de dados de grafos e colunares","quantity":1},{"item_name":"Cursos online Arquitetura com PHP: escalando uma aplica\u00e7\u00e3o monol\u00edtica","quantity":1},{"item_name":"Cursos online Arquitetura e Escalabilidade com PHP: garantindo a disponibilidade de uma aplica\u00e7\u00e3o","quantity":1},{"item_name":"Cursos online PHP: aplicando boas pr\u00e1ticas de c\u00f3digo","quantity":1},{"item_name":"Cursos online Arquitetura com PHP: fazendo o deploy de um aplica\u00e7\u00e3o","quantity":1}]                }
+            });</script> <link
+rel="stylesheet" href="/assets/css/block/listaGuidesCategoria.1750260030.css"><style>.lista-guides__total::after {
+        color: #00c86f    }
+    .lista-guides__wrapper {
+        max-height: 320px;
+    }
+
+    .lista-guides__wrapper--expandido {
+        max-height: 4416px;
+    }
+
+    .lista-guides__ver-todas {
+        display: inline-block;
+    }
+
+    @media(min-width: 731px) {
+        .lista-guides__wrapper {
+            max-height: 320px;
+        }
+        
+        .lista-guides__wrapper--expandido {
+            max-height: 2240px;
+        }
+
+        .lista-guides__ver-todas {
+            display: inline-block;
+        }
+    }</style><section
+class="lista-guides pagina-categoria__lista-guides " data-color="#00c86f"><div
+class="container"><div
+class="lista-guides__decoracao" style="background-color:#00c86f;"><div
+class="lista-guides__decoracao_content">
+<svg
+style="fill:#ffffff" class="pagina-categoria__svg"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+<use
+xlink:href="/svg,1750260030/carreira#icon-carreira-icon-placa"></use>
+</svg>
+<span>69 formações</span></div></div><div
+class="lista-guides__titulo-principal"><div
+class="pagina-categoria__icon-categoria pagina-icone-footer">
+<img
+src="https://www.alura.com.br/assets/api/formacoes/categorias/programacao.svg" /></div><div
+class="lista-guides__wrapper-titulo" style="color:#00c86f;">
+<span
+class="lista-guides_title_label">Formação em</span>
+<span
+class="lista-guides__categoria">Programação</span></div></div><div
+class="lista-guides__listas"><div
+class="lista-guides__carreiras lista-guides___carreiras--categoria-programacao"><div
+class="lista-guides__wrapper lista-guides__wrapper--expandido"><ul
+class="lista-guides__lista--template" id="lc"><li
+class="lista-guides__item--template">
+<a
+href="/formacao-programacao" class="lista-guides__link">
+A partir do zero: iniciante em programação                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-node-js-express" class="lista-guides__link">
+APIs com Node.js e Express                                        <span
+class="lista-guides__total">8 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-c-sharp-orientacao-objetos" class="lista-guides__link">
+Aprenda a programar em C# com Orientação a Objetos                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-aprenda-programar-go" class="lista-guides__link">
+Aprenda a programar em Go                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-java" class="lista-guides__link">
+Aprenda a programar em Java com Orientação a Objetos                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-js-backend" class="lista-guides__link">
+Aprenda a programar em JavaScript com foco no back-end                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-linguagem-php" class="lista-guides__link">
+Aprenda a programar em PHP com Orientação a Objetos                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-linguagem-python" class="lista-guides__link">
+Aprenda a programar em Python com Orientação a Objetos                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-dotnet-microsservicos" class="lista-guides__link">
+Aprofunde em .NET com Arquitetura de Microsserviços e RabbitMQ                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-java-microsservicos" class="lista-guides__link">
+Aprofunde em Java com arquitetura de Microsserviços, Spring e RabbitMQ                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-java-reflection-excecoes-threads-build" class="lista-guides__link">
+Aprofunde em Java com Reflection, Gestão de Memória, Exceções, Threads, Build e JVM                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-cloud-native-kotlin" class="lista-guides__link">
+Aprofunde em Kotlin e DevOps com uma aplicação Cloud Native                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-serverless-node-js" class="lista-guides__link">
+Aprofunde em Node.js com arquitetura Serverless                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-php-escalabilidade-arquitetura" class="lista-guides__link">
+Aprofunde em PHP com Escalabilidade e Arquitetura de Sistemas                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-arquiteto-php" class="lista-guides__link">
+Aprofunde em PHP com padrões de projeto e arquitetura de software                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-banco-dados-php" class="lista-guides__link">
+Aprofunde em PHP com Persistência Poliglota: Integrando Diversos Bancos de Dados                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-php-programacao-funcional-assincrona-metaprogramacao" class="lista-guides__link">
+Aprofunde em PHP com programação funcional, assíncrona e metaprogramação                                        <span
+class="lista-guides__total">6 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-dot-net-avancando-ef-core" class="lista-guides__link">
+Aprofunde em.NET com Entity Framework Core                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-csharp-memoria-paralelismo-linq-padroes-assincronos" class="lista-guides__link">
+Aprofunde-se em C# com memória, paralelismo, LINQ e padrões assíncronos                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-arquitetura-net-codificacao-deploy-nuvem" class="lista-guides__link">
+Arquitetura .NET: da codificação ao deploy na nuvem                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-arquitetura-java-design-codigo-infraestrutura" class="lista-guides__link">
+Arquitetura Java: do design de código à infraestrutura                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-dotnet" class="lista-guides__link">
+ASP.Net Core: crie aplicações com C#, .NET, Entity Framework e LINQ                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-avancando-nodejs" class="lista-guides__link">
+Autenticação, testes e segurança em Node.js                                        <span
+class="lista-guides__total">6 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-boas-praticas-c-sharp" class="lista-guides__link">
+Boas práticas em C#                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-boas-praticas-java" class="lista-guides__link">
+Boas Práticas em Java                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-boas-praticas-node-js-typescript" class="lista-guides__link">
+Boas práticas em Node.js com TypeScript                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-boas-praticas-php" class="lista-guides__link">
+Boas práticas em PHP                                        <span
+class="lista-guides__total">8 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-boas-praticas-python" class="lista-guides__link">
+Boas práticas em Python                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-avancando-c-sharp" class="lista-guides__link">
+C# e Orientação a Objetos: coleções, arquivos e bibliotecas                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-csharp-web" class="lista-guides__link">
+C# Web: crie aplicações usando ASP.NET                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-qa-avancado-cypress-integracao-continua" class="lista-guides__link">
+Carreira QA: avançando em Cypress e implementando integração contínua                                        <span
+class="lista-guides__total">7 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-carreira-tester-qa" class="lista-guides__link">
+Carreira QA: processos e automação de testes                                        <span
+class="lista-guides__total">6 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-cobol" class="lista-guides__link">
+Cobol: desenvolvendo soluções para ambientes de missão crítica                                        <span
+class="lista-guides__total">10 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-flask" class="lista-guides__link">
+Começando com Flask: framework web de Python                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-desenvolvendo-jogos-2d-unity" class="lista-guides__link">
+Desenvolva jogos com Unity                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-django-rest" class="lista-guides__link">
+Django REST Framework: crie APIs com Python                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-django" class="lista-guides__link">
+Django: crie aplicações em Python                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-engenharia-software" class="lista-guides__link">
+Engenharia de software                                        <span
+class="lista-guides__total">9 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-full-stack-react-node-js" class="lista-guides__link">
+Full stack JavaScript: crie um projeto com React e Node.js                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-banco-dados-java" class="lista-guides__link">
+Integre aplicações Java com Banco de dados                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-inteligencia-artificial-google-gemini-crie-ferramentas-chatbots-inteligentes" class="lista-guides__link">
+Inteligência Artificial e Google Gemini: crie ferramentas poderosas e chatbots inteligentes                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-java-spring-security" class="lista-guides__link">
+Java com Spring Security                                        <span
+class="lista-guides__total">4 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-spring-boot-3" class="lista-guides__link">
+Java e Spring Boot                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-java-spring-avançando-spring-webFlux-spring-batch" class="lista-guides__link">
+Java e Spring: avançando com Spring WebFlux e Spring Batch                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-java-web-spring-boot" class="lista-guides__link">
+Java Web: crie aplicações usando Spring Boot                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-kotlin-spring-boot" class="lista-guides__link">
+Kotlin e Spring Boot                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-laravel" class="lista-guides__link">
+Laravel: crie aplicações web em PHP                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-linguagem-c" class="lista-guides__link">
+Linguagem C                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-linguagem-c-plus-plus" class="lista-guides__link">
+Linguagem C++                                        <span
+class="lista-guides__total">7 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-clojure" class="lista-guides__link">
+Linguagem Clojure                                        <span
+class="lista-guides__total">7 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-elixir" class="lista-guides__link">
+Linguagem Elixir                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-go" class="lista-guides__link">
+Linguagem Go                                        <span
+class="lista-guides__total">6 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-kotlin" class="lista-guides__link">
+Linguagem Kotlin                                        <span
+class="lista-guides__total">3 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-rust" class="lista-guides__link">
+Linguagem Rust                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-microsservios-aplicacoes-distribuidas" class="lista-guides__link">
+Microsserviços: desenvolva aplicações distribuídas                                        <span
+class="lista-guides__total">1 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-nest-js" class="lista-guides__link">
+Nest.js: aplicações Node.js eficientes e escaláveis do lado do servidor                                        <span
+class="lista-guides__total">6 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-php-web" class="lista-guides__link">
+PHP Web: crie aplicações web em PHP                                        <span
+class="lista-guides__total">6 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-powershell" class="lista-guides__link">
+PowerShell: automatize suas tarefas                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-praticando-csharp" class="lista-guides__link">
+Praticando C#                                        <span
+class="lista-guides__total">9 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-praticando-java" class="lista-guides__link">
+Praticando Java                                        <span
+class="lista-guides__total">9 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-praticando-javascript" class="lista-guides__link">
+Praticando JavaScript                                        <span
+class="lista-guides__total">5 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-praticando-python" class="lista-guides__link">
+Praticando Python                                        <span
+class="lista-guides__total">8 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-seguranca-aplicacoes-net" class="lista-guides__link">
+Segurança em aplicações .NET                                        <span
+class="lista-guides__total">1 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-trilha-completa-dev-backend-java" class="lista-guides__link">
+Sua trilha completa de carreira em Java na Alura                                        <span
+class="lista-guides__total">35 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-symfony-e-doctrine" class="lista-guides__link">
+Symfony e Doctrine: crie aplicações web em PHP                                        <span
+class="lista-guides__total">7 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-testes-em-dotnet" class="lista-guides__link">
+Testes em .NET                                        <span
+class="lista-guides__total">7 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-topicos-avancados-node-js" class="lista-guides__link">
+Tópicos Avançados com Node.js                                        <span
+class="lista-guides__total">2 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-topicos-avancados-dotnet" class="lista-guides__link">
+Tópicos avançados em .NET                                        <span
+class="lista-guides__total">6 Cursos </span>
+</a></li><li
+class="lista-guides__item--template">
+<a
+href="/formacao-windows-forms-csharp" class="lista-guides__link">
+Windows Forms com C#                                        <span
+class="lista-guides__total">7 Cursos </span>
+</a></li></ul></div><button
+class="lista-guides__ver-todas" aria-expanded="false" aria-controls="lc">
+Ver todas as formações
+</button></div></div></div></section></div></div>
+<style>.guides-title::before {
+                background-color: #00c86f 
+            }</style><div
+class="guides-container" id="como-comecar"><div
+class="container guides-container-effect"><div
+class="guides-title"><h2>
+<span
+class="guides-title_label">Por onde começar com</span>
+<strong
+style="color: #00c86f;">PHP</strong></h2></div><div
+class="guides-content"><p>O <strong>PHP</strong> é uma das <strong>linguagens de programação mais utilizadas</strong> no desenvolvimento web por ser multiplataforma, <em>open source</em>, gratuita e bastante completa. A linguagem PHP conquistou o mercado e os seus desenvolvedores, tendo uma <strong>comunidade vibrante</strong> e uma <strong>evolução rápida nos últimos anos</strong>.</p><p>A <a
+href="https://www.alura.com.br/formacao-desenvolvedor-php"><strong>Formação PHP</strong></a> da Alura é um <strong>guia de aprendizado completo</strong> para você iniciar uma carreira bem sucedida como programador PHP. Você vai aprender os fundamentos da linguagem, as <a
+href="https://www.alura.com.br/artigos/boas-praticas-de-desenvolvimento-php">boas práticas</a>, a <a
+href="https://www.alura.com.br/curso-online-php-oo-classes-metodos-atributos">orientação a objetos</a> e os frameworks populares, como <a
+href="https://www.alura.com.br/curso-online-php-doctrine-mapeamento-objeto-relacional"><strong>Doctrine</strong></a>, utilizado para acessar um banco de dados de maneira produtiva.</p><p>Você também irá utilizar <strong><a
+href="https://www.alura.com.br/curso-online-laravel-produtividade-desenvolvimento-web">Laravel</a>/<a
+href="https://www.alura.com.br/curso-online-php-micro-framework-lumen-api-rest">Lumen</a></strong> e <a
+href="https://www.alura.com.br/curso-online-php-symfony-api-restful"><strong>Symfony</strong></a> para a construção de aplicações web e APIs, o <a
+href="https://www.alura.com.br/curso-online-php-composer"><strong>Composer</strong></a> para controlar as dependências do projeto e muito mais!</p></div></div></div><div
+class="leaders-container"><div
+class="container"><div
+class="leaders-title"><h2>
+<span
+class="leaders-title_label">Líderes da Escola</span>
+<strong>PHP</strong></h2></div><div
+class="leaders-list-container"><ul
+class="leaders-list"><li
+class="leader-list_item"><div
+class="leader-container"><div
+class="leader-image" style="background-image: url('/assets/img/lideres/juliana-amoasei.1750260031.jpeg')"></div><h3 class="leader-name">Juliana Amoasei</h3>
+<strong
+class="leader-headline">Desenvolvedora de software e instrutora</strong></div></li><li
+class="leader-list_item"><div
+class="leader-container"><div
+class="leader-image" style="background-image: url('/assets/img/lideres/rodrigo-ferreira.1750260031.jpg')"></div><h3 class="leader-name">Rodrigo Ferreira</h3>
+<strong
+class="leader-headline">Tech Lead da Escola de Programação</strong></div></li><li
+class="leader-list_item"><div
+class="leader-container"><div
+class="leader-image" style="background-image: url('/assets/img/lideres/paulo-silveira.1750260031.jpeg')"></div><h3 class="leader-name">Paulo Silveira</h3>
+<strong
+class="leader-headline">Hipster e CEO da Alura</strong></div></li></ul></div></div></div><link
+rel="stylesheet" href="/assets/css/block/planos.1750260030.css"><link
+rel="stylesheet" href="/assets/css/block/planosNovo.1750260030.css"><div
+class="plans__wrapper" id="planos"><div
+class="plans container"><h2 class="plans__title">Comece a estudar <span>agora</span> na maior escola de tecnologia do país</span></h2><ul
+class="plans__list"><li
+class="plans__plan "><h3 class="plans__plan__title">Plus</h3><p
+class="plans__plan__description">Impulsione a sua carreira com os melhores cursos e faça parte da maior comunidade tech.</p><div
+class="plans__plan__value"><div
+class="plans__plan__value__installments">
+<span
+class="plans__plan__value__installments__installment">R$109<span>/mês</span></span><p
+class="plans__plan__value__installments__description"><strong>1 ano</strong> de Alura</p></div>
+<span
+class="plans__plan__value__time">
+Valor total <span>R$1.308</span> em até <span>12x</span>
+</span></div><p
+class="plans__plan__total"></p>
+<a
+class="plans__card--button" id="subscribe-link-Plus" data-contentId="100" data-price="109" data-currency="BRL" data-totalPrice="1308" data-productId="111" data-productCode="plus" data-productName="Plus" data-hasCoupon="" data-coupon="" data-discount="" href="/compra/plus/" aria-label="Clique aqui para acessar o carrinho e adquirir o plano plus">
+Matricule-se
+</a><p
+class="plans__plan__benefits__description">Assine o PLUS e garanta:</p><ul
+class="plans__plan__benefits"><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<span>
+Acesso a TODOS os cursos por 1 ano<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Formações com mais de 1500 cursos atualizados e novos lançamentos semanais, em Programação, Inteligência Artificial, Front-end, UX & Design, Data Science, Mobile, DevOps e Inovação & Gestão.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<span>
+Certificado<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">A cada curso ou formação concluído, um novo certificado para turbinar seu currículo e LinkedIn.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<span>
+Mentorias com especialistas<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">No Discord, você tem acesso a eventos exclusivos, grupos de estudos e mentorias com especialistas de diferentes áreas.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<span>
+Comunidade exclusiva<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Faça parte da maior comunidade Dev do país e crie conexões com mais de 120 mil pessoas no Discord.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<span>
+Acesso ao conteúdo das Imersões<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Acesso ilimitado ao catálogo de Imersões da Alura para praticar conhecimentos em diferentes áreas.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<span>
+App Android e iOS para estudar onde quiser<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Explore um universo de possibilidades na palma da sua mão. Baixe as aulas para assistir offline, onde e quando quiser.</p></div>
+</span></div></li></ul></li><li
+class="plans__plan best">
+<span
+class="plans__plan__best">O mais escolhido</span><h3 class="plans__plan__title">Pro</h3><p
+class="plans__plan__description">Acelere o seu aprendizado com a IA da Alura e prepare-se para o mercado internacional.</p><div
+class="plans__plan__value"><div
+class="plans__plan__value__installments">
+<span
+class="plans__plan__value__installments__installment">R$149<span>/mês</span></span><p
+class="plans__plan__value__installments__description"><strong>1 ano</strong> de Alura</p></div>
+<span
+class="plans__plan__value__time">
+Valor total <span>R$1.788</span> em até <span>12x</span>
+</span></div><p
+class="plans__plan__total"></p>
+<a
+class="plans__card--button" id="subscribe-link-Pro" data-contentId="101" data-price="149" data-currency="BRL" data-totalPrice="1788" data-productId="112" data-productCode="pro" data-productName="Pro" data-hasCoupon="" data-coupon="" data-discount="" href="/compra/pro/" aria-label="Clique aqui para acessar o carrinho e adquirir o plano pro">
+Matricule-se
+</a><p
+class="plans__plan__benefits__description">Todos os benefícios do PLUS e mais vantagens exclusivas:</p><ul
+class="plans__plan__benefits"><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<strong>Luri</strong>
+<span>
+, a inteligência artificial da Alura<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Luri é nossa inteligência artificial que tira dúvidas, dá exemplos práticos, corrige exercícios e ajuda a mergulhar ainda mais durante as aulas. Você pode conversar com a Luri até 100 mensagens por semana.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<strong>Alura Língua</strong>
+<span>
+- Inglês e Espanhol<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Aprenda um novo idioma e expanda seus horizontes profissionais. Cursos de Inglês, Espanhol e Inglês para Devs, 100% focado em tecnologia.</p></div>
+</span></div></li></ul></li><li
+class="plans__plan "><h3 class="plans__plan__title">Ultra</h3><p
+class="plans__plan__description">Transforme a sua jornada com benefícios exclusivos e evolua ainda mais na sua carreira.</p><div
+class="plans__plan__value"><div
+class="plans__plan__value__installments">
+<span
+class="plans__plan__value__installments__installment">R$209<span>/mês</span></span><p
+class="plans__plan__value__installments__description"><strong>1 ano</strong> de Alura</p></div>
+<span
+class="plans__plan__value__time">
+Valor total <span>R$2.508</span> em até <span>12x</span>
+</span></div><p
+class="plans__plan__total"></p>
+<a
+class="plans__card--button" id="subscribe-link-Ultra" data-contentId="101" data-price="209" data-currency="BRL" data-totalPrice="2508" data-productId="112" data-productCode="ultra" data-productName="Ultra" data-hasCoupon="" data-coupon="" data-discount="" href="/compra/ultra/" aria-label="Clique aqui para acessar o carrinho e adquirir o plano ultra">
+Matricule-se
+</a><p
+class="plans__plan__benefits__description">Todos os benefícios do PRO e mais vantagens exclusivas:</p><ul
+class="plans__plan__benefits"><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<strong>Luri</strong>
+<span>
+, com mensagens ILIMITADAS<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Mensagens ilimitadas para estudar com a Luri, a IA da Alura, disponível 24hs para tirar suas dúvidas, dar exemplos práticos, corrigir exercícios e impulsionar seus estudos.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<strong>Luri Vision</strong>
+<span>
+, a IA que enxerga suas dúvidas<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Envie imagens para a Luri e ela te ajuda a solucionar problemas, identificar erros, esclarecer gráficos, analisar design e muito mais.</p></div>
+</span></div></li><li
+class="plans__plan__benefit"><div
+class="plans__plan__benefit__wrapper">
+<strong>6 Ebooks</strong>
+<span>
+da Casa do Código<div
+class="plans__plan__benefit__tooltip"><p
+class="plans__plan__benefit__tooltip__description">Escolha os ebooks da Casa do Código, a editora da Alura, que apoiarão a sua jornada de aprendizado para sempre.</p></div>
+</span></div></li></ul></li></ul><a
+href="https://www.alura.com.br/empresas/planos" class="plans__link--company">Conheça os Planos para Empresas</a></div></div> <script src="/assets/js/planosPagamentoOld.1750260032.js"></script> <script>window.addEventListener('load', function() {
+      const tooltipButtons = document.querySelectorAll(
+        '.plans__plan__benefit__tooltip'
+      );
+
+      const tooltipDescriptions = document.querySelectorAll(
+        '.plans__plan__benefit__tooltip__description'
+      );
+
+      setupButtons(tooltipButtons, tooltipDescriptions, ".plans__plan__benefit__tooltip", "active");
+      setupDocument(tooltipButtons, tooltipDescriptions, ".plans__plan__benefit__tooltip", "active");
+    });</script> </main><link
+rel="stylesheet" href="/assets/css/block/footer.1750260030.css"><footer
+class="footer"><div
+class="container"><div
+class="footer-info flex-row"><div
+class="footer-logos">
+<a
+class="footer-logos-home" gtm-data='footer_primeira_secao_050' href="/">
+<img
+src="/assets/img/home/alura-logo.1750260031.svg" alt="Alura" class="footer-logo" loading="lazy" width="75" height="35">
+</a><p
+class="footer-navegue-lista-link --description">
+<span
+class="footer-empresa-item">AOVS Sistemas de Informática S.A</span>
+<span
+class="footer-empresa-item">CNPJ 05.555.382/0001-33</span></p></div><div
+class="footer-card-hotLinks social-desktop"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div
+class="footer-card-hotLinks-info footer-card-redes">
+<a
+href="https://www.youtube.com/alura" gtm-data='footer_primeira_secao_065' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="YouTube da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-youtube" />
+</svg>
+<span>YouTube</span>
+</a>
+<a
+href="https://www.facebook.com/AluraCursosOnline/" gtm-data='footer_primeira_secao_066'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-facebook" />
+</svg>
+<span>Facebook</span>
+</a>
+<a
+href="https://twitter.com/aluraonline" gtm-data='footer_primeira_secao_067' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="Twitter da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-twitter" />
+</svg>
+<span>Twitter</span>
+</a>
+<a
+href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data='footer_primeira_secao_073'
+target="_blank" rel="noopener" title="Instagram da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-instagram" />
+</svg>
+<span>Instagram</span>
+</a>
+<a
+href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR"
+gtm-data='footer_primeira_secao_069' class="footer-card-hotLinks-link" target="_blank" rel="noopener"
+title="Baixar na Google Play Store">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-googleplay" />
+</svg>
+<span>Google Play Store</span>
+</a>
+<a
+href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data='footer_primeira_secao_070'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-appstore" />
+</svg>
+<span>AppStore</span>
+</a>
+<a
+href="https://www.tiktok.com/@aluraonline?lang=pt-BR" gtm-data='footer_primeira_secao_071' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="TikTok da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-tiktok" />
+</svg>
+<span>TikTok</span>
+</a></div></div><div
+class="footer-card-hotLinks social-mobile"><h2 class="footer-card-hotLinks-titulo">Nossas redes e apps</h2><div
+class="footer-card-hotLinks-info footer-card-redes">
+<a
+href="https://www.youtube.com/alura" gtm-data='footer_primeira_secao_065' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="YouTube da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-youtube" />
+</svg>
+<span>YouTube</span>
+</a>
+<a
+href="https://www.facebook.com/AluraCursosOnline/" gtm-data='footer_primeira_secao_066'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Facebook da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-facebook">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-facebook" />
+</svg>
+<span>Facebook</span>
+</a>
+<a
+href="https://twitter.com/aluraonline" gtm-data='footer_primeira_secao_067' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="Twitter da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-twitter">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-twitter" />
+</svg>
+<span>Twitter</span>
+</a>
+<a
+href="https://instagram.com/aluraonline" class="footer-card-hotLinks-link" gtm-data='footer_primeira_secao_073'
+target="_blank" rel="noopener" title="Instagram da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-instagram">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-instagram" />
+</svg>
+<span>Instagram</span>
+</a>
+<a
+href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&hl=pt_BR"
+gtm-data='footer_primeira_secao_069' class="footer-card-hotLinks-link" target="_blank" rel="noopener"
+title="Baixar na Google Play Store">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-googleplay" />
+</svg>
+<span>Google Play Store</span>
+</a>
+<a
+href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" gtm-data='footer_primeira_secao_070'
+class="footer-card-hotLinks-link" target="_blank" rel="noopener" title="Baixar na AppStore">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-mobile">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-appstore" />
+</svg>
+<span>AppStore</span>
+</a>
+<a
+href="https://www.tiktok.com/@aluraonline?lang=pt-BR" gtm-data='footer_primeira_secao_071' class="footer-card-hotLinks-link"
+target="_blank" rel="noopener" title="TikTok da Alura">
+<svg
+class="footer-card-hotLinks-icon footer-card-hotLinks-youtube">
+<use
+xlink:href="/svg,1750260031/footer#icon-footer-tiktok" />
+</svg>
+<span>TikTok</span>
+</a></div></div></div><div
+class="footer-navegue"><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Institucional</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/sobre" gtm-data='footer_primeira_secao_063'>Sobre nós</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://alura-fiap-pm3.inhire.app/alura/vagas">Carreiras Alura</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://www.alura.com.br/empresas">Para
+Empresas</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://startalura.com.br/">Para Sua Escola</a></li><li
+class="footer-navegue-lista-link"><a
+href="/politica-de-privacidade" gtm-data='footer_primeira_secao_061'>Política de Privacidade</a></li><li
+class="footer-navegue-lista-link"><a
+href="/compromisso-de-integridade">Compromisso de Integridade</a></li><li
+class="footer-navegue-lista-link"><a
+href="/termos-de-uso" gtm-data='footer_primeira_secao_062'>Termos
+de
+Uso</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://drive.google.com/open?id=10jsnllQrEddusKyqp9A2Q6Wg_HpQpC49&usp=drive_fs" target="_blank">Documentos Institucionais</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://status.alura.com.br/">Status</a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">A Alura</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/como-funciona" gtm-data='footer_primeira_secao_064'>Como
+Funciona</a></li><li
+class="footer-navegue-lista-link"><a
+href="/formacoes" gtm-data='footer_primeira_secao_064'>Formações</a></li><li
+class="footer-navegue-lista-link"><a
+href="/cursos-online-tecnologia" gtm-data='footer_primeira_secao_054'>Plataforma</a></li><li
+class="footer-navegue-lista-link"><a
+href="/depoimentos" gtm-data="footer_primeira_secao_069">Depoimentos</a></li><li
+class="footer-navegue-lista-link"><a
+href="/instrutores" gtm-data="footer_primeira_secao_061">Instrutores(as)</a></li><li
+class="footer-navegue-lista-link"><a
+href="/dev-em-t" gtm-data='footer_primeira_secao_065'>Dev em
+&lt;T&gt;</a></li><li
+class="footer-navegue-lista-link"><a
+href="/luri-inteligencia-artificial" gtm-data='footer_primeira_secao_065'>Luri, a inteligência artificial da Alura</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://www.iaconferencebrasil.com.br/" target="_blank">IA Conference 2025</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://carreira.alura.com.br/cursos-imersivos/home" target="_blank">Cursos imersivos</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://carreira.alura.com.br/certificacoes/home" target="_blank">Certificações</a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Conteúdos</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="/cases">Alura Cases</a></li><li
+class="footer-navegue-lista-link"><a
+href="/imersao" gtm-data="footer_primeira_secao_068">Imersões</a></li><li
+class="footer-navegue-lista-link"><a
+href="/artigos" gtm-data='footer_primeira_secao_058'>Artigos</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://hipsters.network/">Podcasts</a></li><li
+class="footer-navegue-lista-link"><a
+href="/empresas/conteudos">Artigos de educação <br> corporativa</a></li><li
+class="footer-navegue-lista-link">
+<a
+href="/imersao-devops-google">
+Imersão Cloud Devops                      </a></li></ul></div><div
+class="navegue-column"><h2 class="footer-navegacao-titulo">Fale Conosco</h2><ul
+class="footer-navegue-lista"><li
+class="footer-navegue-lista-link"><a
+href="https://www.alura.com.br/contato">Email e telefone</a></li><li
+class="footer-navegue-lista-link"><a
+href="https://suporte.alura.com.br/" gtm-data='footer_primeira_secao_066'>Perguntas frequentes</a></li></ul></div><div
+class="footer-column footer-column-cards"><div
+class="newsletter"><h2 class="newsletter-titulo">Novidades e Lançamentos</h2><div
+class="hubspot-form newsletter-form"> <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js?pre=1"></script> <script>hbspt.forms.create({
+                    region: "na1",
+                    portalId: "21748317",
+                    formId: "39a8f8bd-d48f-4f45-8ed4-d26366176d39"
+                  });</script> </div></div></div></div></div></footer><section
+class="footer_categorias-formacoes"><div
+class="container"><div
+class="footer_categorias_wrapper"><h2 class="footer_categorias_title">Cursos</h2><div
+class="footer_categorias_categorias footer-navegue-lista-link"><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-programacao">Cursos de Programação</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-programacao/logica">
+Lógica                    </a>
+|                                      <a
+href="/cursos-online-programacao/python">
+Python                    </a>
+|                                      <a
+href="/cursos-online-programacao/php">
+PHP                    </a>
+|                                      <a
+href="/cursos-online-programacao/java">
+Java                    </a>
+|                                      <a
+href="/cursos-online-programacao/dotnet">
+.NET                    </a>
+|                                      <a
+href="/cursos-online-programacao/node-js">
+Node JS                    </a>
+|                                      <a
+href="/cursos-online-programacao/linguagem-c">
+C                    </a>
+|                                      <a
+href="/cursos-online-programacao/computacao">
+Computação                    </a>
+|                                      <a
+href="/cursos-online-programacao/jogos">
+Jogos                    </a>
+|                                      <a
+href="/cursos-online-programacao/internet-das-coisas">
+IoT                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-front-end">Cursos de Front-end</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-front-end/front-end">
+HTML, CSS                    </a>
+|                                      <a
+href="/cursos-online-front-end/reactjs">
+React                    </a>
+|                                      <a
+href="/cursos-online-front-end/angular">
+Angular                    </a>
+|                                      <a
+href="/cursos-online-front-end/javascript">
+JavaScript                    </a>
+|                                      <a
+href="/cursos-online-front-end/jquery">
+jQuery                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-data-science">Cursos de Data Science</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-data-science/data-science">
+Ciência de dados                    </a>
+|                                      <a
+href="/cursos-online-data-science/business-intelligence">
+BI                    </a>
+|                                      <a
+href="/cursos-online-data-science/sql">
+SQL e Banco de Dados                    </a>
+|                                      <a
+href="/cursos-online-data-science/excel">
+Excel                    </a>
+|                                      <a
+href="/cursos-online-data-science/machine-learning">
+Machine Learning                    </a>
+|                                      <a
+href="/cursos-online-data-science/nosql">
+NoSQL                    </a>
+|                                      <a
+href="/cursos-online-data-science/estatistica">
+Estatística                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-inteligencia-artificial">Cursos de Inteligência Artificial</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-inteligencia-artificial/ia-para-programacao">
+IA para Programação                    </a>
+|                                      <a
+href="/cursos-online-inteligencia-artificial/ia-para-dados">
+IA para Dados                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-devops">Cursos de DevOps</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-devops/aws">
+AWS                    </a>
+|                                      <a
+href="/cursos-online-devops/azure">
+Azure                    </a>
+|                                      <a
+href="/cursos-online-devops/containers">
+Docker                    </a>
+|                                      <a
+href="/cursos-online-devops/seguranca">
+Segurança                    </a>
+|                                      <a
+href="/cursos-online-devops/infraestrutura-como-codigo">
+IaC                    </a>
+|                                      <a
+href="/cursos-online-devops/linux-comandos-e-processos">
+Linux                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-design-ux">Cursos de UX & Design</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-design-ux/ux">
+Usabilidade e UX                    </a>
+|                                      <a
+href="/cursos-online-design-ux/video">
+Vídeo e Motion                    </a>
+|                                      <a
+href="/cursos-online-design-ux/3d">
+3D                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-mobile">Cursos de Mobile</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-mobile/flutter-mobile">
+Flutter                    </a>
+|                                      <a
+href="/cursos-online-mobile/ios">
+iOS e Swift                    </a>
+|                                      <a
+href="/cursos-online-mobile/android">
+Android, Kotlin                    </a>
+|                                      <a
+href="/cursos-online-mobile/jogos">
+Jogos                    </a></div></div><div
+class="footer_categorias_categoria">
+<a
+href="/cursos-online-inovacao-gestao">Cursos de Inovação & Gestão</a><div
+class="footer_categorias_subcategorias">
+<a
+href="/cursos-online-inovacao-gestao/agilidade">
+Métodos Ágeis                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/softskills-carreira">
+Softskills                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/gestao-corporativa">
+Liderança e Gestão                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/startup-empreendedorismo">
+Startups                    </a>
+|                                      <a
+href="/cursos-online-inovacao-gestao/vendas">
+Vendas                    </a></div></div></div></div><div
+class="footer_categorias_wrapper" style="margin-top:2em"><h2 class="footer_categorias_title">Cursos universitários FIAP</h2><div
+class="footer_categorias_categorias footer-navegue-lista-link">
+<a
+target="_blank" href="https://www.fiap.com.br/graduacao/?utm_source=site-alura&utm_medium=referral&utm_campaign=BR_footer-site&utm_id=&utm_term=&utm_content=">Graduação</a> |
+<a
+target="_blank" href="https://postech.fiap.com.br?utm_source=site-alura&utm_medium=referral&utm_campaign=BR_footer-site&utm_id=&utm_term=&utm_content=">Pós-graduação</a> |
+<a
+target="_blank" href="https://www.fiap.com.br/mba?utm_source=site-alura&utm_medium=referral&utm_campaign=BR_footer-site&utm_id=&utm_term=&utm_content= ">MBA</a></div></div></div></section><style>@media not all and (min-width: 1024px) {
+			.grupoCaelum {
+				display: none;
+			}
+		}
+
+		.grupoCaelum {
+			background: #fff;
+			height: 440px;
+			border-top: 1px solid #EBEBEE;
+		}
+
+		.grupoCaelum .container {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			padding-top: 0;
+			padding-bottom: 0;
+			height: 100%;
+		}
+
+		.grupoCaelum-list {
+			display: flex;
+			list-style: none;
+			width: 80%;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-top: 1.25rem;
+		}
+
+		.grupoCaelum-title {
+			width: 20%;
+		}
+
+		.grupoCaelum-column {
+			display: inline-block;
+			padding-left: 1.1875rem;
+			width: 240px;
+			height: 400px;
+			min-width: 160px;
+		}
+
+		.grupoCaelum-column-title {
+			font-size: 0.625rem;
+			color: #d7e0e5;
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 1.1875rem;
+		}
+
+		.grupoCaelum-column-list {
+			list-style: none;
+		}
+
+		.column-item-title {
+			font-size: 0.6875rem;
+			text-align: center;
+			vertical-align: middle;
+			display: inline-block;
+			margin-left: 0.375rem;
+		}
+
+		.grupoCaelum-column:not(:first-child) {
+			border-left: solid 1px #e3e9ed;
+		}
+
+		.grupoCaelum-title {
+			display: inline-block;
+			text-decoration: none;
+			color: #657176;
+			letter-spacing: normal;
+			font-size: 1.125rem;
+			margin-top: 3.375rem;
+		}
+
+		.column-item-logo {
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		.column-item {
+			margin-bottom: 1.0625rem;
+		}
+
+		.column-item a {
+			text-decoration: none;
+			color: #657176;
+			display: flex;
+			align-items: center;
+		}</style><footer
+class="caelum-footer" id="caelum-footer"><div
+class="grupoCaelum"><div
+class="container"><p
+class="grupoCaelum-title">Alura</p><ul
+class="grupoCaelum-list"><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Educação em Tecnologia</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://www.fiap.com.br/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/fiap.1750260030.svg" alt="logo fiap" loading="lazy" />
+<span
+class="column-item-title">FIAP</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.casadocodigo.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/cdc.1750260030.svg" alt="logo casa do codigo" loading="lazy" />
+<span
+class="column-item-title">Casa do Código</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" style="fill: #657176" href="https://www.pm3.com.br/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/pm3.1750260030.svg" alt="logo pm3" loading="lazy" />
+<span
+class="column-item-title">PM3 - Cursos de Produto</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Mais Alura</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://www.startalura.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/startbyalura.1750260030.png" alt="logo alura start" loading="lazy" />
+<span
+class="column-item-title">START BY Alura</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.aluralingua.com.br">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/aluralingua.1750260030.svg" alt="logo alura lingua" loading="lazy" />
+<span
+class="column-item-title">Alura Língua</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.alura.com.br/empresas">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/alura-empresas.1750260030.svg" alt="logo alura para empresas" loading="lazy" />
+<span
+class="column-item-title">Alura Para Empresas</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.aluracursos.com">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/alura.1750260030.svg" alt="logo alura latam" loading="lazy" />
+<span
+class="column-item-title">Alura LATAM</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Comunidade</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="
+https://techguide.sh/								">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/techguide.1750260030.svg" alt="logo tech guide" loading="lazy" />
+<span
+class="column-item-title">Tech Guide</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://7daysofcode.io/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/7days.1750260030.svg" alt="logo 7 days of code"loading="lazy" />
+<span
+class="column-item-title">7 days of code</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://hipsters.jobs">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipstersjobs.1750260030.svg" alt="logo Hipsters ponto Jobs" loading="lazy" />
+<span
+class="column-item-title">Hipsters ponto Jobs</span>
+</a></li></ul></li><li
+class="grupoCaelum-column"><p
+class="grupoCaelum-column-title">Podcasts</p><ul
+class="grupoCaelum-column-list"><li
+class="column-item">
+<a
+target="_blank" href="https://hipsters.network/">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipsternetwork.1750260030.svg" alt="logo Hipster Network" loading="lazy" />
+<span
+class="column-item-title">Hipster Network</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/hipsterstech">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/hipsterstech.1750260030.svg" alt="logo Hipsters ponto Tech" loading="lazy" />
+<span
+class="column-item-title">Hipsters ponto Tech</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/devsemfronteiras">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/devsemfronteiras.1750260030.svg" alt="logo Dev sem fronteiras" loading="lazy" />
+<span
+class="column-item-title">Dev sem Fronteiras</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/likeaboss">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/likeaboss.1750260030.svg" alt="logo Like a Boss" loading="lazy" />
+<span
+class="column-item-title">Like a Boss</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/iasobcontrole">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/iasobcontrole.1750260030.svg" alt="logo IA Sob Controle" loading="lazy" />
+<span
+class="column-item-title">IA Sob Controle</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/mesadeproduto">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/mesadeproduto.1750260030.svg" alt="logo Mesa de Produto" loading="lazy" />
+<span
+class="column-item-title">Mesa de Produto</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/decode">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/decode.1750260030.svg" alt="logo Decode" loading="lazy" />
+<span
+class="column-item-title">Decode</span>
+</a></li><li
+class="column-item">
+<a
+target="_blank" href="https://www.hipsters.network/podcasts/fiapcast">
+<img
+class="column-item-logo" src="https://www.alura.com.br/assets/img/caelumFooter/fiapcast.1750260030.svg" alt="logo FIAPCast" loading="lazy" />
+<span
+class="column-item-title">FIAPCast</span>
+</a></li></ul></li></ul></div></div></footer> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" async></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script> <script>hljs.initHighlightingOnLoad();</script> <script src="/assets/js/lib/svg4everybody.min.1750260032.js" async></script> <script src="/assets/js/footer/footer.1750260032.js" defer></script> <script src="/assets/js/header/menuMobile.1750260032.js" defer></script> <script src="/assets/js/header/menu.1750260032.js" defer></script> <script src="/assets/js/header/busca.1750260032.js" defer></script> <script src="/assets/js/header/cursos.1750260032.js" defer></script> <script src="/assets/js/detect.1750260032.js" async></script> <script src="/assets/js/video.1750260032.js" defer></script> <script src="/assets/js/countdown.1750260032.js" async></script> <script src="/assets/js/header/cookie-influencer.1750260032.js" async></script> <script src="/assets/js/trackers.1750260032.js" async></script> <script src="/assets/js/courseIconFallback.1750260032.js" defer></script> <script src="/assets/js/linkBannerSupercupom.1750260032.js" defer></script> <script src="https://static.criteo.net/js/ld/ld.js" async></script> <script>function criteoPush(event, data){
+		var isAluno = document.cookie.match('alura.userId=([^;]+)') != null;
+		if(isAluno) return;
+
+		window.criteo_q = window.criteo_q || [];
+
+		if (event == 'viewHome')
+			var dt = { event: event}
+		else
+			var dt = { event: event, item: data};
+
+		window.criteo_q.push(
+			{ event: "setAccount", account: 28037 },
+			{ event: "setEmail", email: "" },
+			{ event: "setSiteType", type: (/iPad/.test(navigator.userAgent) ? "t" : (/Mobile|iP(hone|od)|Android|BlackBerry|IEMobile/.test(navigator.userAgent) ? "m" : "d")) },
+			dt
+		);	
+	};
+
+			criteoPush("viewItem", "cursos-online-programacao");
+	
+		var criteoIdEl = document.querySelector('[data-criteo-id]');
+	if (criteoIdEl) {
+        var products = JSON.parse(criteoIdEl.dataset.criteoId);
+        var planos = document.querySelectorAll('[data-payment-plan]');
+
+        planos.forEach(function (plano) {
+            plano.addEventListener('click', function (event) {
+				var price = plano.dataset.paymentPlanPrice;
+                var totalProducts = products.length;
+				var productIds = '';
+
+                for(var i = 0; i < totalProducts; i++){
+                    products[i]['price'] = price;
+                    products[i]['quantity'] = 1;
+					productIds += ',' + products[i]['id'];
+                }
+
+				productIds = productIds.substr(1);
+
+				// monta cookie pro Cart indicando quais cursos foram clicados
+        		document.cookie = "criteo.productIds=" + productIds + "; path=/; domain=.alura.com.br";
+
+				// manda pro criteo
+                criteoPush("viewBasket", products);
+            });
+        });
+
+
+	}</script> <script src="/assets/js/categoria/ListaGuides.1750260032.js" async></script> <script src="/assets/js/categoria/ListaSubcategorias.1750260032.js" async></script> <script src="/assets/js/categoria/categoria.1750260032.js" async></script> </body></html>
