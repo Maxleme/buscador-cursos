@@ -19,7 +19,7 @@ class Buscador
     public function buscar(string $url): array
     {
         $resposta = $this->httpClient->request('GET', $url);
-        $html = $resposta->getBody();
+        $html = $resposta->getBody()->__tostring();
         $this->crawler->addHtmlContent($html);
 
         $elementosCursos = $this->crawler->filter('span.card-curso__nome');
